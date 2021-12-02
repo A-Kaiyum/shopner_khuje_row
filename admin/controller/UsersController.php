@@ -22,18 +22,18 @@ switch ($_POST['action']) {
 
 			}
 			else{
-				$_SESSION['message'] = "<div class='alert alert-danger'>Invelid password</div>";
+				$_SESSION['message'] = "<div class='alert alert-danger'>Invalid password</div>";
 			header('Location:../login.php');
 			}
 		}
 		else{
-			$_SESSION['message'] = "<div class='alert alert-danger'>Invelid E-Mail</div>";
+			$_SESSION['message'] = "<div class='alert alert-danger'>Invalid E-Mail</div>";
 			header('Location:../login.php');
 		}	
 		break;
 	case 'logout_process':
 			session_destroy();
-			header('Location:../login.php');
+			header('Location:../../index.php');
 		break;	
 	case 'save_user':
 		$user->name = $_POST['name'];

@@ -51,7 +51,7 @@ switch ($_POST['action']) {
 		{
 			$_SESSION['message'] = "<div class='alert alert-danger'>Member Unable to delete</div>";
 		}
-		header('Location:../members_list.php');
+		header('Location:../member_list.php');
 		break;
 			
 	default:
